@@ -1,0 +1,28 @@
+<div id="tracks">
+    <h1 class="title">Results</h1>
+
+    <div id="searchTracks">
+        {{#each albums}}
+                <div class="artistImg">
+                    <img src="{{this.images.0.url}}" alt="artist img"/>
+                </div>
+                {{/each}}
+        {{#each tracks}}
+        <div class="artist">
+            <div>
+                 
+                
+            </div>
+            <div class="artist_name">
+                <h3>{{this.name}}</h3>
+                <p>{{this.track_number}}</p>
+                <audio controls>
+                    <source src="{{this.preview_url}}" type="audio/ogg">
+                    Your browser does not support the audio element.
+                </audio>
+                <audio src="{{this.preview_url}}"></audio>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

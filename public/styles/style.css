@@ -1,0 +1,87 @@
+
+
+body{
+    background-image: url('../images/spotify-background.jpeg');
+    background-size:cover;
+    background-position:  center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+}
+form{
+    background-color: white;
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+.align{
+    height: 90vh;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.artistImg > img{
+    width: 200px;
+    height: auto;
+}
+
+#searchResult{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#searchAlbums{ display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#searchTracks{ display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+h3{
+    color: white;
+}
+.title{
+    color: white;
+
+}
+.titleSpotify{
+    font-size: 2rem;
+    -webkit-text-stroke: 1px #005214;
+    color: #005214;
+    
+}
+
+#artist_search{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    height: 4vh;
+    border-radius: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+button{
+    margin-top: 1vh;
+    background-color: #005214;
+    color: white;
+    height: 5vh;
+    border-radius: 10px;
+}
